@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LB1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #111;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        aside {
+            width: 300px;
+            padding: 20px;
+            background-color: #e0e0e0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #111;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            margin-top: auto;
+        }
+        .right-column {
+            padding: 20px;
+            background-color: #e0e0e0;
+        }
+        .right-column label,
+        .right-column input,
+        .right-column select,
+        .right-column button {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Лабораторна №1</h1>
+    </header>
+
+    <div class="container">
+        <main>
+            <p><b><i>E=mc</b></i><sup>2</sup>, where <b>E</b> - energy of the object,<br> <b>m</b> - it's mass, <b>c</b> - speed of light in vacuum, equals to 299 792 458 <i>m/s</i></p>
+
+            <div class="left-column">
+                <label for="dropdown">Список студентів</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="option1">Альберті В.П.</option>
+                    <option value="option2">Афанков М.В.</option>
+                    <option value="option3">Балабанов Р.М.</option>
+                    <option value="option4">Біленко М.К</option>
+                    <option value="option5">Боклаг Л.О.</option>
+                    <option value="option6">Бородай В.Р</option>
+                    <option value="option7">Димчук М.І</option>
+                    <option value="option8">Коротич А.Ю.</option>
+                    <option value="option9">Крилов М.В.</option>
+                    <option value="option10">Кураксін Є.О.</option>
+                    <option value="option11">Ланцков О.Ю.</option>
+                    <option value="option12">Лист А.А.</option>
+                    <option value="option13">Мухін Є.І.</option>
+                    <option value="option14">Наумов М.О.</option>
+                    <option value="option15">Попов К.І.</option>
+                    <option value="option16">Протопопов О.М.</option>
+                    <option value="option17">Раптанов Д.А.</option>
+                    <option value="option18">Смотрова А.О.</option>
+                    <option value="option19">Стоянов Д.О.</option>
+                    <option value="option20">Трубач С.О.</option>
+                </select>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Глава</th>
+                        <th>Номер сторінки</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Король та його володіння</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Непрохані гості</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>Перша зустріч</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Плани мисливців</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>Мусква</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Тер вбиває карибу</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>Брюс уточнює факти</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Мати Мускви</td>
+                        <td>46</td>
+                    </tr>
+                    <tr>
+                        <td>Поєдинок</td>
+                        <td>52</td>
+                    </tr>
+                    <tr>
+                        <td>Через гори</td>
+                        <td>58</td>
+                    </tr>
+                    <tr>
+                        <td>Брюс та Ленгдон на місці побоїща</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <td>До невідомої країни</td>
+                        <td>67</td>
+                    </tr>
+                    <tr>
+                        <td>Піпунескус</td>
+                        <td>76</td>
+                    </tr>
+                    <tr>
+                        <td>Поява собак</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>Попався</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>Приручення Мускви</td>
+                        <td>96</td>
+                    </tr>
+                    <tr>
+                        <td>Тер власною персоною</td>
+                        <td>104</td>
+                    </tr>
+                    <tr>
+                        <td>Великодушність сильного</td>
+                        <td>109</td>
+                    </tr>
+                    <tr>
+                        <td>Остання схватка</td>
+                        <td>113</td>
+                    </tr>
+                    <tr>
+                        <td>«Прощавай Мусква!»</td>
+                        <td>116</td>
+                    </tr>
+                    <tr>
+                        <td>Мусква шукає свого друга</td>
+                        <td>119</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+        <aside>
+            <label for="firstname">введіть ім'я студента</label>
+            <input type="text" id="firstname" name="firstname"><br>
+            <label for="secondname">введіть прізвище студента</label>
+            <input type="text" id="secondname" name="secondname"><br>
+            <label for="group">введіть групу студента</label>
+            <input type="text" id="group" name="group"><br>
+            <p><a href="AnotherPage.html#text">Гіперпосилання</a></p>
+        </aside>
+    </div>
+
+    <footer>
+        2023 Харків
+    </footer>
+
+</body>
+</html>
